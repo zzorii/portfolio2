@@ -7,7 +7,6 @@
   text-decoration: none;
   box-sizing: border-box;
   color: aliceblue;
-  background-color: #121212;
 }
 
 body,
@@ -43,7 +42,7 @@ button {
 }
 
 body {
-  background: #fff;
+  background-color: #121212;
   font-size: 14px;
   line-height: 1.5;
   font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
@@ -98,6 +97,7 @@ header {
   height: 100px;
   padding: 0 20px;
   z-index: 100;
+  background-color: #121212;
 }
 header .inner {
   display: flex;
@@ -130,6 +130,18 @@ header .inner {
   color: aliceblue;
 }
 
+.fp-tableCell {
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.section .sec-tit {
+  writing-mode: vertical-rl;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 100px;
+}
+
 .intro {
   position: relative;
   overflow: hidden;
@@ -139,6 +151,7 @@ header .inner {
   overflow: hidden;
   width: 200%;
   animation: introtxt 10s linear infinite;
+  animation-delay: 2s;
 }
 @keyframes introtxt {
   0% {
@@ -148,7 +161,7 @@ header .inner {
     left: -100%;
   }
 }
-.intro span {
+.intro .intro-txt span {
   color: rgb(255, 78, 107);
   font-family: "Black Han Sans", sans-serif;
   font-size: 100px;
@@ -157,9 +170,24 @@ header .inner {
 .project .sec-cont {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .project .sec-cont .project-lst {
   width: 30%;
   height: 70vh;
+  background-color: rgb(52, 156, 254);
+}
+
+#contact {
+  position: relative;
+}
+#contact .contact-txt {
+  width: 50%;
+  height: 70vh;
   background-color: rgb(62, 254, 52);
+}
+#contact .contact-bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }/*# sourceMappingURL=comm.css.map */

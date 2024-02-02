@@ -9,7 +9,6 @@
   text-decoration: none;
   box-sizing: border-box;
   color: aliceblue;
-  background-color: #121212;
 }
 body,
 div,
@@ -44,7 +43,7 @@ button {
 }
 
 body {
-  background: #fff;
+  background-color: #121212;
   font-size: 14px;
   line-height: 1.5;
   font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
@@ -102,12 +101,14 @@ header {
   height: 100px;
   padding: 0 20px;
   z-index: 100;
+  background-color: #121212;
   .inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
   }
+  // display: none;
 }
 
 // logo
@@ -116,7 +117,6 @@ header {
     display: flex;
     font-family: "Bebas Neue", sans-serif;
     font-size: 50px;
-
     color: aliceblue;
   }
 }
@@ -137,6 +137,18 @@ header {
     color: aliceblue;
   }
 }
+.fp-tableCell {
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+}
+.section {
+  .sec-tit {
+    writing-mode: vertical-rl;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 100px;
+  }
+}
 
 // intro
 .intro {
@@ -147,6 +159,7 @@ header {
     overflow: hidden;
     width: 200%;
     animation: introtxt 10s linear infinite;
+    animation-delay: 2s;
     @keyframes introtxt {
       0% {
         left: 0;
@@ -155,22 +168,47 @@ header {
         left: -100%;
       }
     }
+    span {
+      color: rgb(255, 78, 107);
+      font-family: "Black Han Sans", sans-serif;
+      font-size: 100px;
+    }
   }
-  span {
-    color: rgb(255, 78, 107);
-    font-family: "Black Han Sans", sans-serif;
-    font-size: 100px;
-  }
+  // .intro-bg {
+  //   overflow: hidden;
+  //   width: 50%;
+  //   height: 100%;
+  //   border-top: 315px solid transparent;
+  //   border-bottom: 315px solid transparent;
+  //   border-right: 300px solid;
+  //   color: aliceblue;
+  // }
 }
 
 .project {
   .sec-cont {
     display: flex;
     justify-content: space-between;
+    width: 100%;
     .project-lst {
       width: 30%;
       height: 70vh;
-      background-color: rgb(62, 254, 52);
+      background-color: rgb(52, 156, 254);
     }
+  }
+}
+
+// contact
+#contact {
+  position: relative;
+  .contact-txt {
+    width: 50%;
+    height: 70vh;
+    background-color: rgb(62, 254, 52);
+  }
+  .contact-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }
